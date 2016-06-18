@@ -47,7 +47,7 @@ public class RecordDataActivity extends RoomActivity {
     protected SubMenu fSubMenu;
     protected MenuItem toggleFingerprintVisibility;
 
-    private int selectedRoom;
+    private String selectedRoom = PLACES[0];
     private boolean isFingerprintsVisible = true;
 
     AlertDialog noRoomSelectedDialog;
@@ -92,7 +92,7 @@ public class RecordDataActivity extends RoomActivity {
     // TODO Raminta: document this
     @Override
     public void onReceiveWifiScanResults(List<ScanResult> results) {
-        if (isActive && counter != 0 && selectedRoom > NO_ROOM_COMMAND) {
+        if (isActive && counter != 0 && selectedRoom.equals(PLACES[0])) {
             // accept only scans with enough found access points
             if (results.size() >= MIN_COUNT) {
                 counter--;
@@ -146,7 +146,7 @@ public class RecordDataActivity extends RoomActivity {
     }
 
     public void startScan() {
-        if (selectedRoom > NO_ROOM_COMMAND) {
+        if(selectedRoom.equals(PLACES[0])) {
             noRoomSelectedDialog.show();
         } else {
             counter = COUNT;
@@ -191,11 +191,11 @@ public class RecordDataActivity extends RoomActivity {
         int fingerprint_cmd = id;
         commands.put(id++, "Fingerprints");
         TOGGLE_FINGERPRINTS_COMMAND = id;
-        commands.put(id++, "ShowFingerprints");
-        commands.put(id++, "HideFingerprints");
+        commands.put(id++, "Show Fingerprints");
+        commands.put(id++, "Hide Fingerprints");
         DELETE_FINGERPRINTS_COMMAND = id;
 
-        commands.put(id++, "Hide Fingerprints");
+        commands.put(id++, "Delete Fingerprints");
         commands.put(id++, "Show Fingerprints");
         commands.put(id++, "Delete All Fingerprints");
         ROOM_COMMAND = id;
@@ -243,8 +243,8 @@ public class RecordDataActivity extends RoomActivity {
         } else if (id == DELETE_FINGERPRINTS_COMMAND) {
             deleteAllFingerprints();
         } else if (id > ROOM_COMMAND && id < commands.size()) {
-            selectedRoom = id;
             TextView selectedRoomView = (TextView) findViewById(R.id.selected_room_View);
+            selectedRoom = commands.get(id);
             selectedRoomView.setText(commands.get(id));
         } else {
             return super.onOptionsItemSelected(item);

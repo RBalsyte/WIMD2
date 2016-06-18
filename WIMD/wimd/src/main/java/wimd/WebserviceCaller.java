@@ -16,7 +16,7 @@ public class WebserviceCaller implements WebserviceCallerInterface {
     @Override
     public String getLocation() {
         int timestamp = 0; //TODO get timestamp
-        String location = ""; //TODO get location
+        String location = null; //TODO get location
 
         if(location==null) return "Unknown location";
         else if(timestamp>100000) return "Your partner is probably dead."; //TODO adapt 100000 to a suitable time

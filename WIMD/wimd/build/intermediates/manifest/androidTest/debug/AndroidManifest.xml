@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="wimd.test">
+    package="WIMD.wimd.test">
 
     <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="21" />
 
@@ -9,8 +9,8 @@
     </application>
 
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="wimd"
+                     android:targetPackage="WIMD.wimd"
                      android:handleProfiling="false"
                      android:functionalTest="false"
-                     android:label="Tests for wimd"/>
+                     android:label="Tests for WIMD.wimd"/>
 </manifest>

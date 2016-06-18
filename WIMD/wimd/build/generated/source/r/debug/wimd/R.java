@@ -1372,8 +1372,8 @@ containing a value of this type.
         public static final int beginning=0x7f0c0013;
         public static final int checkbox=0x7f0c002b;
         public static final int collapseActionView=0x7f0c0019;
-        public static final int current_room_View=0x7f0c0041;
-        public static final int dearestLocation=0x7f0c0045;
+        public static final int current_room_View=0x7f0c0042;
+        public static final int dearestLocation=0x7f0c0047;
         public static final int decor_content_parent=0x7f0c0031;
         public static final int default_activity_button=0x7f0c0026;
         public static final int dialog=0x7f0c001d;
@@ -1388,11 +1388,12 @@ containing a value of this type.
         public static final int icon=0x7f0c0028;
         public static final int ifRoom=0x7f0c001a;
         public static final int image=0x7f0c0025;
+        public static final int imageView=0x7f0c0041;
         public static final int listMode=0x7f0c0009;
         public static final int list_item=0x7f0c0027;
         public static final int middle=0x7f0c0015;
-        public static final int myLocation=0x7f0c0044;
-        public static final int myLocationString=0x7f0c0043;
+        public static final int myLocation=0x7f0c0046;
+        public static final int myLocationString=0x7f0c0045;
         public static final int never=0x7f0c001b;
         public static final int none=0x7f0c000e;
         public static final int normal=0x7f0c000a;
@@ -1409,7 +1410,7 @@ containing a value of this type.
         public static final int search_plate=0x7f0c003b;
         public static final int search_src_text=0x7f0c003c;
         public static final int search_voice_btn=0x7f0c0040;
-        public static final int selected_room_View=0x7f0c0042;
+        public static final int selected_room_View=0x7f0c0043;
         public static final int shortcut=0x7f0c002c;
         public static final int showCustom=0x7f0c000f;
         public static final int showHome=0x7f0c0010;
@@ -1418,8 +1419,8 @@ containing a value of this type.
         public static final int submit_area=0x7f0c003e;
         public static final int tabMode=0x7f0c000b;
         public static final int title=0x7f0c0029;
-        public static final int tv=0x7f0c0047;
-        public static final int tvTextView=0x7f0c0046;
+        public static final int tv=0x7f0c0044;
+        public static final int tvTextView=0x7f0c0048;
         public static final int up=0x7f0c0008;
         public static final int useLogo=0x7f0c0012;
         public static final int withText=0x7f0c001c;

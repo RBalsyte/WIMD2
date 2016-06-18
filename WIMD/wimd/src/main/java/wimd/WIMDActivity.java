@@ -16,7 +16,7 @@ public class WIMDActivity extends RoomActivity {
     private static final int EXIT_COMMAND = 0;
     private static final int START_SCAN_COMMAND = 1;
 
-    private WebserviceCaller ws;
+    private WebserviceCaller wsc;
     private TextView tv;
     private TextView myLocationView;
     private String myLocation;
@@ -26,7 +26,7 @@ public class WIMDActivity extends RoomActivity {
         setContentView(R.layout.wimd);
         myLocationView = (TextView) findViewById(R.id.myLocation);
         tv = (TextView) findViewById(R.id.tvTextView);
-        ws = new WebserviceCaller();
+        wsc = new WebserviceCaller();
         setMyLocation(PLACES[0]);
         startStalking();
         wifi.startScan();
@@ -37,14 +37,14 @@ public class WIMDActivity extends RoomActivity {
     public void onReceiveWifiScanResults(List<ScanResult> results) {
         // Do not update every time
         // TODO Raminta: wrap with a thread and limit to certain number so that calculation is done in parallel? and also scheduleAtFixedRate?
-        if (isActive && results.size() > 0) {
+        if (isActive && results!=null && results.size() > 0) {
             Map<String, Integer> m = new HashMap<>();
             for (ScanResult result : results) {
                 m.put(result.BSSID, result.level);
             }
 
             Fingerprint f = app.findRoom(measurements, m);
-            setMyLocation(f.getRoom());
+            if(f!=null) setMyLocation(f.getRoom());
             scanNext();
         }
     }
@@ -68,13 +68,14 @@ public class WIMDActivity extends RoomActivity {
 
             @Override
             public void run() {
-                if(isActive){
-                    String location = ws.getLocation();
-                    if (location == null) {
-                        setTVLocation(getString(R.string.unknown_location));
+                while(isActive){
+                    String location = wsc.getLocation();
+                    //TODO DELELTE - wsc.getLocation() returns "Unknown location" anyway if location == null
+                  /*  if (location == null) {
+                        setTVLocation("Unknown location");
                         return;
-                    }
-                    setTVLocation(ws.getLocation());
+                    } */
+                    setTVLocation(location);
                 }
             }
 
@@ -87,7 +88,7 @@ public class WIMDActivity extends RoomActivity {
             public void run() {
                 myLocation = room;
                 myLocationView.setText(myLocation);
-                ws.setLocation(myLocation);
+                wsc.setLocation(myLocation);
             }
         });
     }
@@ -122,6 +123,5 @@ public class WIMDActivity extends RoomActivity {
                 tv.setText(location);
             }
         });
-
     }
 }

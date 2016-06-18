@@ -379,8 +379,8 @@ int id always 0x7f0c0018
 int id beginning 0x7f0c0013
 int id checkbox 0x7f0c002b
 int id collapseActionView 0x7f0c0019
-int id current_room_View 0x7f0c0041
-int id dearestLocation 0x7f0c0045
+int id current_room_View 0x7f0c0042
+int id dearestLocation 0x7f0c0047
 int id decor_content_parent 0x7f0c0031
 int id default_activity_button 0x7f0c0026
 int id dialog 0x7f0c001d
@@ -395,11 +395,12 @@ int id homeAsUp 0x7f0c000d
 int id icon 0x7f0c0028
 int id ifRoom 0x7f0c001a
 int id image 0x7f0c0025
+int id imageView 0x7f0c0041
 int id listMode 0x7f0c0009
 int id list_item 0x7f0c0027
 int id middle 0x7f0c0015
-int id myLocation 0x7f0c0044
-int id myLocationString 0x7f0c0043
+int id myLocation 0x7f0c0046
+int id myLocationString 0x7f0c0045
 int id never 0x7f0c001b
 int id none 0x7f0c000e
 int id normal 0x7f0c000a
@@ -416,7 +417,7 @@ int id search_mag_icon 0x7f0c003a
 int id search_plate 0x7f0c003b
 int id search_src_text 0x7f0c003c
 int id search_voice_btn 0x7f0c0040
-int id selected_room_View 0x7f0c0042
+int id selected_room_View 0x7f0c0043
 int id shortcut 0x7f0c002c
 int id showCustom 0x7f0c000f
 int id showHome 0x7f0c0010
@@ -425,8 +426,8 @@ int id split_action_bar 0x7f0c0007
 int id submit_area 0x7f0c003e
 int id tabMode 0x7f0c000b
 int id title 0x7f0c0029
-int id tv 0x7f0c0047
-int id tvTextView 0x7f0c0046
+int id tv 0x7f0c0044
+int id tvTextView 0x7f0c0048
 int id up 0x7f0c0008
 int id useLogo 0x7f0c0012
 int id withText 0x7f0c001c
