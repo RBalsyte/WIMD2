@@ -146,14 +146,14 @@ public class RecordDataActivity extends RoomActivity {
     }
 
     public void startScan() {
-        if (selectedRoom > NO_ROOM_COMMAND) {
+        if (selectedRoom <= NO_ROOM_COMMAND) {
             noRoomSelectedDialog.show();
-        } else {
-            counter = COUNT;
-            measurements = new HashMap<>();
-            pDialog = ProgressDialog.show(this, "", RECORDING, true);
-            wifi.startScan();
+            return;
         }
+        counter = COUNT;
+        measurements = new HashMap<>();
+        pDialog = ProgressDialog.show(this, "", RECORDING, true);
+        wifi.startScan();
     }
 
     public void scanNext() {
