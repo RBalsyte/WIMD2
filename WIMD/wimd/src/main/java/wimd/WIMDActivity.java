@@ -16,17 +16,19 @@ public class WIMDActivity extends RoomActivity {
     private static final int EXIT_COMMAND = 0;
     private static final int START_SCAN_COMMAND = 1;
 
-    private WebserviceCaller wsc;
+    private Webclient wc;
     private TextView tv;
     private TextView myLocationView;
     private String myLocation;
 
     @Override
     protected void setupContentView() {
+        new Webserver();
+
         setContentView(R.layout.wimd);
         myLocationView = (TextView) findViewById(R.id.myLocation);
         tv = (TextView) findViewById(R.id.tvTextView);
-        wsc = new WebserviceCaller();
+        wc = new Webclient(this);
         setMyLocation(PLACES[0]);
         startStalking();
         wifi.startScan();
@@ -69,7 +71,7 @@ public class WIMDActivity extends RoomActivity {
             @Override
             public void run() {
                 while(isActive){
-                    String location = wsc.getLocation();
+                    String location = wc.getLocation();
                     //TODO DELELTE - wsc.getLocation() returns "Unknown location" anyway if location == null
                   /*  if (location == null) {
                         setTVLocation("Unknown location");
@@ -88,7 +90,7 @@ public class WIMDActivity extends RoomActivity {
             public void run() {
                 myLocation = room;
                 myLocationView.setText(myLocation);
-                wsc.setLocation(myLocation);
+                wc.setLocation(myLocation);
             }
         });
     }
