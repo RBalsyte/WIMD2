@@ -22,27 +22,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="137f6cf5-2ed8-4df3-965f-fa0c8b776e61" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wimd/src/main/java/wimd/Webserver.java" />
-      <change type="DELETED" beforePath="C:\Users\kritz\Documents\GitHub\WIMD2\WIMD\wimd\build\intermediates\classes\debug\wimd\Interfaces\WebserviceCallerInterface.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\kritz\Documents\GitHub\WIMD2\WIMD\wimd\build\intermediates\classes\debug\wimd\Webservice.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\kritz\Documents\GitHub\WIMD2\WIMD\wimd\build\intermediates\classes\debug\wimd\WebserviceCaller.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\kritz\Documents\GitHub\WIMD2\WIMD\wimd\src\main\java\wimd\Webservice.java" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\kritz\Documents\GitHub\WIMD2\WIMD\wimd\src\main\java\wimd\Interfaces\WebserviceCallerInterface.java" afterPath="$PROJECT_DIR$/wimd/src/main/java/wimd/Interfaces/WebclientInterface.java" />
-      <change type="MOVED" beforePath="C:\Users\kritz\Documents\GitHub\WIMD2\WIMD\wimd\src\main\java\wimd\WebserviceCaller.java" afterPath="$PROJECT_DIR$/wimd/src/main/java/wimd/Webclient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wimd/build/intermediates/classes/debug/wimd/WIMDActivity$1.class" afterPath="$PROJECT_DIR$/wimd/build/intermediates/classes/debug/wimd/WIMDActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wimd/build/intermediates/classes/debug/wimd/WIMDActivity$2.class" afterPath="$PROJECT_DIR$/wimd/build/intermediates/classes/debug/wimd/WIMDActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wimd/build/intermediates/classes/debug/wimd/WIMDActivity$3.class" afterPath="$PROJECT_DIR$/wimd/build/intermediates/classes/debug/wimd/WIMDActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wimd/build/intermediates/classes/debug/wimd/WIMDActivity$4.class" afterPath="$PROJECT_DIR$/wimd/build/intermediates/classes/debug/wimd/WIMDActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wimd/build/intermediates/classes/debug/wimd/WIMDActivity.class" afterPath="$PROJECT_DIR$/wimd/build/intermediates/classes/debug/wimd/WIMDActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wimd/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="$PROJECT_DIR$/wimd/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wimd/build/intermediates/pre-dexed/debug/debug_cffc09e6e8eb3e62b6762bf355e4320fb134df42.jar" afterPath="$PROJECT_DIR$/wimd/build/intermediates/pre-dexed/debug/debug_cffc09e6e8eb3e62b6762bf355e4320fb134df42.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wimd/build/outputs/apk/wimd-debug-unaligned.apk" afterPath="$PROJECT_DIR$/wimd/build/outputs/apk/wimd-debug-unaligned.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wimd/build/outputs/apk/wimd-debug.apk" afterPath="$PROJECT_DIR$/wimd/build/outputs/apk/wimd-debug.apk" />
+      <change type="MOVED" beforePath="C:\Users\kritz\Documents\GitHub\WIMD2\WIMD\wimd\src\main\java\wimd\RecordDataActivity.java" afterPath="$PROJECT_DIR$/wimd/src/main/java/wimd/ScanDataActivity.java" />
+      <change type="MOVED" beforePath="C:\Users\kritz\Documents\GitHub\WIMD2\WIMD\wimd\src\main\res\layout\recording_layout.xml" afterPath="$PROJECT_DIR$/wimd/src/main/res/layout/scanning_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wimd/build/generated/source/r/debug/wimd/R.java" afterPath="$PROJECT_DIR$/wimd/build/generated/source/r/debug/wimd/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wimd/src/main/java/wimd/WIMDActivity.java" afterPath="$PROJECT_DIR$/wimd/src/main/java/wimd/WIMDActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wimd/src/main/java/wimd/Webclient.java" afterPath="$PROJECT_DIR$/wimd/src/main/java/wimd/Webclient.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WIMD.iws" />
@@ -86,23 +70,47 @@
       <file leaf-file-name="WIMDActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wimd/src/main/java/wimd/WIMDActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.448276">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state vertical-scroll-proportion="1.8275862">
+              <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2667#2892#0" expanded="true" />
-                <element signature="e#2891#2892#0" expanded="true" />
+                <element signature="e#2348#2573#0" expanded="true" />
+                <element signature="e#2572#2573#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoomActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RoomActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wimd/src/main/java/wimd/RoomActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="35" />
-              <folding />
+            <state vertical-scroll-proportion="0.2468828">
+              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScanDataActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wimd/src/main/java/wimd/ScanDataActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.2413793">
+              <caret line="152" column="12" selection-start-line="152" selection-start-column="12" selection-end-line="152" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2258#2456#0" expanded="true" />
+                <element signature="e#2455#2456#0" expanded="true" />
+                <element signature="e#2738#2973#0" expanded="true" />
+                <element signature="e#2972#2973#0" expanded="true" />
+                <element signature="e#3016#3178#0" expanded="true" />
+                <element signature="e#3177#3178#0" expanded="true" />
+                <element signature="e#6291#6422#0" expanded="true" />
+                <element signature="e#6421#6422#0" expanded="true" />
+                <element signature="e#6846#6847#0" expanded="true" />
+                <element signature="e#6884#6885#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,7 +119,7 @@
         <entry file="file://$PROJECT_DIR$/wimd/src/main/java/wimd/FingerprintDatabaseHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+              <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -127,32 +135,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RecordDataActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wimd/src/main/java/wimd/RecordDataActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.137931">
-              <caret line="46" column="13" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2346#2544#0" expanded="true" />
-                <element signature="e#2543#2544#0" expanded="true" />
-                <element signature="e#2828#3063#0" expanded="true" />
-                <element signature="e#3062#3063#0" expanded="true" />
-                <element signature="e#3106#3268#0" expanded="true" />
-                <element signature="e#3267#3268#0" expanded="true" />
-                <element signature="e#6382#6513#0" expanded="true" />
-                <element signature="e#6512#6513#0" expanded="true" />
-                <element signature="e#6937#6938#0" expanded="true" />
-                <element signature="e#6975#6976#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Webserver.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Webserver.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wimd/src/main/java/wimd/Webserver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8741135">
+            <state vertical-scroll-proportion="0.0">
               <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -167,7 +153,7 @@
         <entry file="file://$PROJECT_DIR$/wimd/src/main/java/wimd/Webclient.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="37" column="95" selection-start-line="37" selection-start-column="95" selection-end-line="37" selection-end-column="95" />
+              <caret line="56" column="75" selection-start-line="56" selection-start-column="75" selection-end-line="56" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1743,11 +1729,13 @@
         <option value="$PROJECT_DIR$/wimd/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/wimd/src/main/java/wimd/WebserviceCaller.java" />
         <option value="$PROJECT_DIR$/wimd/src/main/res/layout/recording_layout.xml" />
-        <option value="$PROJECT_DIR$/wimd/src/main/java/wimd/RecordDataActivity.java" />
         <option value="$PROJECT_DIR$/wimd/src/main/java/wimd/Webservice.java" />
-        <option value="$PROJECT_DIR$/wimd/src/main/java/wimd/Webclient.java" />
-        <option value="$PROJECT_DIR$/wimd/src/main/java/wimd/WIMDActivity.java" />
         <option value="$PROJECT_DIR$/wimd/src/main/java/wimd/Webserver.java" />
+        <option value="$PROJECT_DIR$/wimd/src/main/java/wimd/Webclient.java" />
+        <option value="$PROJECT_DIR$/wimd/src/main/java/wimd/RecordDataActivity.java" />
+        <option value="$PROJECT_DIR$/wimd/src/main/java/wimd/WIMDActivity.java" />
+        <option value="$PROJECT_DIR$/wimd/src/main/java/wimd/ScanDataActivity.java" />
+        <option value="$PROJECT_DIR$/wimd/src/main/java/wimd/RoomActivity.java" />
       </list>
     </option>
   </component>
@@ -2222,14 +2210,15 @@
     </todo-panel>
     <todo-panel id="all">
       <are-packages-shown value="true" />
+      <flatten-packages value="true" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1441144" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5280528" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -2237,7 +2226,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3487349" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3487349" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36193618" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -2325,7 +2314,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wimd/src/main/res/layout/recording_layout.xml">
+    <entry file="file://$PROJECT_DIR$/wimd/src/main/res/layout/scanning_layout.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7140187">
           <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
@@ -2338,19 +2327,25 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wimd/src/main/java/wimd/FingerprintDatabaseHandler.java">
+    <entry file="file://$PROJECT_DIR$/wimd/src/main/java/wimd/Webserver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-          <folding />
+          <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#409#1355#0" expanded="true" />
+            <element signature="e#1354#1355#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wimd/src/main/java/wimd/RoomActivity.java">
+    <entry file="file://$PROJECT_DIR$/wimd/src/main/java/wimd/Webclient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="35" />
-          <folding />
+          <caret line="56" column="75" selection-start-line="56" selection-start-column="75" selection-end-line="56" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2364,56 +2359,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wimd/src/main/java/wimd/RecordDataActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.137931">
-          <caret line="46" column="13" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2346#2544#0" expanded="true" />
-            <element signature="e#2543#2544#0" expanded="true" />
-            <element signature="e#2828#3063#0" expanded="true" />
-            <element signature="e#3062#3063#0" expanded="true" />
-            <element signature="e#3106#3268#0" expanded="true" />
-            <element signature="e#3267#3268#0" expanded="true" />
-            <element signature="e#6382#6513#0" expanded="true" />
-            <element signature="e#6512#6513#0" expanded="true" />
-            <element signature="e#6937#6938#0" expanded="true" />
-            <element signature="e#6975#6976#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wimd/src/main/java/wimd/Webclient.java">
+    <entry file="file://$PROJECT_DIR$/wimd/src/main/java/wimd/FingerprintDatabaseHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="95" selection-start-line="37" selection-start-column="95" selection-end-line="37" selection-end-column="95" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wimd/src/main/java/wimd/WIMDActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.448276">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.8275862">
+          <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2667#2892#0" expanded="true" />
-            <element signature="e#2891#2892#0" expanded="true" />
+            <element signature="e#2348#2573#0" expanded="true" />
+            <element signature="e#2572#2573#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wimd/src/main/java/wimd/Webserver.java">
+    <entry file="file://$PROJECT_DIR$/wimd/src/main/java/wimd/ScanDataActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8741135">
-          <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+        <state vertical-scroll-proportion="1.2413793">
+          <caret line="152" column="12" selection-start-line="152" selection-start-column="12" selection-end-line="152" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#409#1355#0" expanded="true" />
-            <element signature="e#1354#1355#0" expanded="true" />
+            <element signature="e#2258#2456#0" expanded="true" />
+            <element signature="e#2455#2456#0" expanded="true" />
+            <element signature="e#2738#2973#0" expanded="true" />
+            <element signature="e#2972#2973#0" expanded="true" />
+            <element signature="e#3016#3178#0" expanded="true" />
+            <element signature="e#3177#3178#0" expanded="true" />
+            <element signature="e#6291#6422#0" expanded="true" />
+            <element signature="e#6421#6422#0" expanded="true" />
+            <element signature="e#6846#6847#0" expanded="true" />
+            <element signature="e#6884#6885#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wimd/src/main/java/wimd/RoomActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2468828">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

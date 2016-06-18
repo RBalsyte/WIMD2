@@ -71,13 +71,7 @@ public class WIMDActivity extends RoomActivity {
             @Override
             public void run() {
                 while(isActive){
-                    String location = wc.getLocation();
-                    //TODO DELELTE - wsc.getLocation() returns "Unknown location" anyway if location == null
-                  /*  if (location == null) {
-                        setTVLocation("Unknown location");
-                        return;
-                    } */
-                    setTVLocation(location);
+                    setTVLocation(wc.getLocation());
                 }
             }
 
@@ -110,7 +104,7 @@ public class WIMDActivity extends RoomActivity {
         if (id == EXIT_COMMAND) {
             finish();
         } else if (id == START_SCAN_COMMAND) {
-            Intent intent = new Intent(WIMDActivity.this, RecordDataActivity.class);
+            Intent intent = new Intent(WIMDActivity.this, ScanDataActivity.class);
             startActivity(intent);
         } else {
             return super.onOptionsItemSelected(item);

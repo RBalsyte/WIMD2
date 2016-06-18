@@ -17,17 +17,15 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.util.TreeSet;
 
-//TODO Raminta: rename everything to "scan" instead of "record(ing)"?
+public class ScanDataActivity extends RoomActivity {
 
-public class RecordDataActivity extends RoomActivity {
+    private static final String SCANNING = "Scanning...";
 
-    private static final String RECORDING = " Recording...";
-
-    /* The minimum amount of records need to be taken for a successful recording */
+    /* The minimum amount of scans need to be taken for a successful scanning */
     private static final int MIN_COUNT = 3;
-    /* Count of records taken for average calculation*/
+    /* Count of scans taken for average calculation*/
     private static final int COUNT = 3;
-    /* Counts how many records should we still take*/
+    /* Counts how many scans should we still take*/
     private int counter = 0;
 
     private int START_COMMAND;
@@ -55,15 +53,15 @@ public class RecordDataActivity extends RoomActivity {
 
     @Override
     protected void setupContentView() {
-        setTitle("Recording Fingerprints");
-        setContentView(R.layout.recording_layout);
+        setTitle("Scanning Fingerprints");
+        setContentView(R.layout.scanning_layout);
         setupDialogs();
     }
 
     private void setupDialogs(){
-        noRoomSelectedDialog = new AlertDialog.Builder(RecordDataActivity.this).create();
+        noRoomSelectedDialog = new AlertDialog.Builder(ScanDataActivity.this).create();
         noRoomSelectedDialog.setTitle("Alert");
-        noRoomSelectedDialog.setMessage("No Room selected.\nPlease select a room to start recording.");
+        noRoomSelectedDialog.setMessage("No Room selected.\nPlease select a room to start scanning.");
         noRoomSelectedDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
@@ -72,7 +70,7 @@ public class RecordDataActivity extends RoomActivity {
                 }
         );
 
-        AlertDialog.Builder builder =  new AlertDialog.Builder(RecordDataActivity.this);
+        AlertDialog.Builder builder =  new AlertDialog.Builder(ScanDataActivity.this);
         builder.setTitle("Confirm Deletion");
         builder.setMessage("Are sure you want to delete all fingerprints from the database?");
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
@@ -151,7 +149,7 @@ public class RecordDataActivity extends RoomActivity {
         } else {
             counter = COUNT;
             measurements = new HashMap<>();
-            pDialog = ProgressDialog.show(this, "", RECORDING, true);
+            pDialog = ProgressDialog.show(this, "", SCANNING, true);
             wifi.startScan();
         }
     }
@@ -185,7 +183,7 @@ public class RecordDataActivity extends RoomActivity {
         int id = 0;
 
         START_COMMAND = id;
-        commands.put(id++, "Start Recording");
+        commands.put(id++, "Start Scanning");
         EXIT_COMMAND = id;
         commands.put(id++, "Exit");
         int fingerprint_cmd = id;

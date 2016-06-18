@@ -54,7 +54,7 @@ public class Webclient implements WebclientInterface {
     @Override
     public String getLocation() {
         if(location==null) return "Unknown location";
-        else if(timestamp>360) return "Your partner is probably dead."; //TODO adapt 100000 to a suitable time
+        else if(timestamp>360) return "Your partner is probably dead."; // 6 hours
         else if(timestamp>60) return "There currently is no connection.";
         else return "Your partner is at " + location;
     }
