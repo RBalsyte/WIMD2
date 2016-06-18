@@ -71,10 +71,10 @@ public class WIMDActivity extends RoomActivity {
                 if(isActive){
                     String location = ws.getLocation();
                     if (location == null) {
-                        tv.setText(getString(R.string.unknown_location));
+                        setTVLocation(getString(R.string.unknown_location));
                         return;
                     }
-                    tv.setText(ws.getLocation());
+                    setTVLocation(ws.getLocation());
                 }
             }
 
@@ -108,5 +108,15 @@ public class WIMDActivity extends RoomActivity {
             return super.onOptionsItemSelected(item);
         }
         return true;
+    }
+
+    public void setTVLocation(final String location){
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                tv.setText(location);
+            }
+        });
+
     }
 }

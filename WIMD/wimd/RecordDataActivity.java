@@ -50,7 +50,7 @@ public class RecordDataActivity extends RoomActivity {
     private int selectedRoom;
     private boolean isFingerprintsVisible = true;
 
-    AlertDialog noRoomSelectedDialog = new AlertDialog.Builder(RecordDataActivity.this).create();
+    AlertDialog noRoomSelectedDialog;
     AlertDialog deleteAllDialog;
 
     @Override
@@ -61,6 +61,7 @@ public class RecordDataActivity extends RoomActivity {
     }
 
     private void setupDialogs(){
+        noRoomSelectedDialog = new AlertDialog.Builder(RecordDataActivity.this).create();
         noRoomSelectedDialog.setTitle("Alert");
         noRoomSelectedDialog.setMessage("No Room selected.\nPlease select a room to start recording.");
         noRoomSelectedDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
@@ -200,7 +201,7 @@ public class RecordDataActivity extends RoomActivity {
         ROOM_COMMAND = id;
         commands.put(id++, "Choose Room");
         for (int place = 0; id < PLACES.length; place++, id++) {
-            commands.put(id++, PLACES[place]);
+            commands.put(id, PLACES[place]);
         }
 
         for (id = 0; id < commands.size(); id++) {

@@ -25,8 +25,10 @@ public class MainApp extends Application {
 
     public Fingerprint findRoom(Map<String, Integer> measurements, Map<String, Integer> newMeasurements){
         TreeSet<String> keys = new TreeSet<String>();
-        keys.addAll(measurements.keySet());
-        keys.addAll(newMeasurements.keySet());
+        if (measurements != null && !measurements.isEmpty())
+            keys.addAll(measurements.keySet());
+        if (newMeasurements != null && !newMeasurements.isEmpty())
+            keys.addAll(newMeasurements.keySet());
 
         // calculate access point signal strengths with weighted averages
         // (adjust to sudden big changes in received signal strengths)
