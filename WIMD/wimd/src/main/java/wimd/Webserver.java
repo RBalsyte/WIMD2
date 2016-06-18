@@ -73,4 +73,8 @@ class Webserver {
             location2 = fields[1];
         }
     }
+
+    public static void main(String[] args) {
+        new Webserver();
+    }
 }
