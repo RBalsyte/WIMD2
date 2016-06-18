@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WIMD</string>
+    <string name="no_room_selected">NONE
+        Please select a room and press start to begin recording.</string>
+    <string name="selected_room">Selected Room:</string>
+    <string name="my_location">My Location:</string>
+    <string name="unknown_location">Unknown location</string>
+    <string name="my_dearest_location">My Dearest\'s Location:</string>
+
+</resources>
