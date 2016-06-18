@@ -58,6 +58,7 @@ public class RecordDataActivity extends RoomActivity {
         setTitle("Recording Fingerprints");
         setContentView(R.layout.recording_layout);
         setupDialogs();
+        setSelectedRoom(-1);
     }
 
     private void setupDialogs(){
@@ -194,9 +195,6 @@ public class RecordDataActivity extends RoomActivity {
         commands.put(id++, "ShowFingerprints");
         commands.put(id++, "HideFingerprints");
         DELETE_FINGERPRINTS_COMMAND = id;
-
-        commands.put(id++, "Hide Fingerprints");
-        commands.put(id++, "Show Fingerprints");
         commands.put(id++, "Delete All Fingerprints");
         ROOM_COMMAND = id;
         commands.put(id++, "Choose Room");
@@ -224,9 +222,6 @@ public class RecordDataActivity extends RoomActivity {
         }
         super.onCreateOptionsMenu(menu);
 
-        TextView selectedRoomView = (TextView) findViewById(R.id.selected_room_View);
-        selectedRoomView.setText(commands.get(ROOM_COMMAND + 1));
-
         return true;
     }
 
@@ -250,5 +245,19 @@ public class RecordDataActivity extends RoomActivity {
             return super.onOptionsItemSelected(item);
         }
         return true;
+    }
+
+    public void setSelectedRoom(final int id){
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                TextView selectedRoomView = (TextView) findViewById(R.id.selected_room_View);
+                if (id < NO_ROOM_COMMAND){
+                    selectedRoomView.setText("Unknown");
+                    return;
+                }
+                selectedRoomView.setText(commands.get(id));
+            }
+        });
     }
 }

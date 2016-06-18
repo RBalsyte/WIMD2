@@ -85,7 +85,11 @@ public class WIMDActivity extends RoomActivity {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                myLocation = room;
+                if (room == null || room.isEmpty()) {
+                    myLocation = "Unknown";
+                }else{
+                    myLocation = room;
+                }
                 myLocationView.setText(myLocation);
                 ws.setLocation(myLocation);
             }
