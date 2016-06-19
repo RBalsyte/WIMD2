@@ -23,12 +23,10 @@ public class WIMDActivity extends RoomActivity {
 
     @Override
     protected void setupContentView() {
-     //   new Webserver(); //TODO don't open server here should be already running (for testing)
-
         setContentView(R.layout.wimd);
         myLocationView = (TextView) findViewById(R.id.myLocation);
         tv = (TextView) findViewById(R.id.tvTextView);
-        client = new Client();
+        client = new Client(this);
         setMyLocation(PLACES[0]);
         startStalking();
         wifi.startScan();
