@@ -16,7 +16,7 @@ public class WIMDActivity extends RoomActivity {
     private static final int EXIT_COMMAND = 0;
     private static final int START_SCAN_COMMAND = 1;
 
-    private Webclient wc;
+    private Client client;
     private TextView tv;
     private TextView myLocationView;
     private String myLocation;
@@ -28,7 +28,7 @@ public class WIMDActivity extends RoomActivity {
         setContentView(R.layout.wimd);
         myLocationView = (TextView) findViewById(R.id.myLocation);
         tv = (TextView) findViewById(R.id.tvTextView);
-        wc = new Webclient(this);
+        client = new Client();
         setMyLocation(PLACES[0]);
         startStalking();
         wifi.startScan();
@@ -71,7 +71,7 @@ public class WIMDActivity extends RoomActivity {
             @Override
             public void run() {
                 while(isActive){
-                    setTVLocation(wc.getLocation());
+                    setTVLocation(client.getLocation());
                 }
             }
 
@@ -84,7 +84,7 @@ public class WIMDActivity extends RoomActivity {
             public void run() {
                 myLocation = room;
                 myLocationView.setText(myLocation);
-                wc.setLocation(myLocation);
+                client.setLocation(myLocation);
             }
         });
     }
