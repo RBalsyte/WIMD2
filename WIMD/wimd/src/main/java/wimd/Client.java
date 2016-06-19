@@ -14,9 +14,10 @@ public class Client implements ClientInterface {
 
     private BufferedReader in;
     private PrintWriter out;
-    private String myLocation;
+    private String myLocation = "Unknown";
+    private long myTimestamp = Integer.MAX_VALUE;
     private String location;
-    private int timestamp;
+    private long timestamp;
 
     public Client() {
         try {
@@ -27,23 +28,31 @@ public class Client implements ClientInterface {
             e.printStackTrace();
         }
 
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                while(true) {
+                    String data = myLocation + SEPARATOR + myTimestamp;
+                    out.println(data);
+
+                    try {
+                        String line = in.readLine();
+                        String[] fields = line.split(SEPARATOR);
+                        location = fields[0];
+                        timestamp = Integer.parseInt(fields[1]);
+                        Thread.sleep(1000);
+                    } catch (InterruptedException | IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }).start();
     }
 
     @Override
     public void setLocation(String location) {
         myLocation = location;
-        String data = location + SEPARATOR + System.currentTimeMillis() / 1000;
-        out.println(data);
-
-        try {
-            String line = in.readLine();
-            String[] fields = line.split(SEPARATOR);
-            this.location = fields[0];
-            timestamp = Integer.parseInt(fields[1]);
-        }
-        catch(IOException e) {
-            e.printStackTrace();
-        }
+        myTimestamp = System.currentTimeMillis()/1000;
     }
 
     @Override
