@@ -28,7 +28,7 @@
         </activity>
 
         <activity
-            android:name=".RecordDataActivity"
+            android:name=".ScanDataActivity"
             android:label="@string/app_name"
             android:screenOrientation="landscape">
             <meta-data

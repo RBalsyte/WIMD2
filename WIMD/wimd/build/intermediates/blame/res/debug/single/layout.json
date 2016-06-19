@@ -56,16 +56,16 @@
         "source": "C:\\Users\\kritz\\Documents\\GitHub\\WIMD2\\WIMD\\wimd\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
+        "merged": "C:\\Users\\kritz\\Documents\\GitHub\\WIMD2\\WIMD\\wimd\\build\\intermediates\\res\\merged\\debug\\layout\\scanning_layout.xml",
+        "source": "C:\\Users\\kritz\\Documents\\GitHub\\WIMD2\\WIMD\\wimd\\src\\main\\res\\layout\\scanning_layout.xml"
+    },
+    {
         "merged": "C:\\Users\\kritz\\Documents\\GitHub\\WIMD2\\WIMD\\wimd\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_include.xml",
         "source": "C:\\Users\\kritz\\Documents\\GitHub\\WIMD2\\WIMD\\wimd\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\layout\\abc_activity_chooser_view_include.xml"
     },
     {
         "merged": "C:\\Users\\kritz\\Documents\\GitHub\\WIMD2\\WIMD\\wimd\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
         "source": "C:\\Users\\kritz\\Documents\\GitHub\\WIMD2\\WIMD\\wimd\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\layout\\abc_list_menu_item_layout.xml"
-    },
-    {
-        "merged": "C:\\Users\\kritz\\Documents\\GitHub\\WIMD2\\WIMD\\wimd\\build\\intermediates\\res\\merged\\debug\\layout\\recording_layout.xml",
-        "source": "C:\\Users\\kritz\\Documents\\GitHub\\WIMD2\\WIMD\\wimd\\src\\main\\res\\layout\\recording_layout.xml"
     },
     {
         "merged": "C:\\Users\\kritz\\Documents\\GitHub\\WIMD2\\WIMD\\wimd\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",

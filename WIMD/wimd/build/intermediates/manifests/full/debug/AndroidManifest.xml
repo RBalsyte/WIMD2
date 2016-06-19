@@ -33,7 +33,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="wimd.RecordDataActivity"
+            android:name="wimd.ScanDataActivity"
             android:label="@string/app_name"
             android:screenOrientation="landscape" >
             <meta-data

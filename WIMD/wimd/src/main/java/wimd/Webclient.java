@@ -25,7 +25,7 @@ public class Webclient implements WebclientInterface {
         mac = info.getMacAddress();
 
         try {
-            socket = new Socket("127.0.0.1",6000); //TODO don't use local host, use the ip adresse of the pc where the server is running
+            socket = new Socket("192.168.1.100",4031); //TODO change to ip where the server is running
             pw= new PrintWriter(socket.getOutputStream(),true);
         }
         catch(IOException e) {

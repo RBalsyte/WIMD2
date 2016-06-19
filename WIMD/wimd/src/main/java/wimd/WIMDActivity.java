@@ -23,7 +23,7 @@ public class WIMDActivity extends RoomActivity {
 
     @Override
     protected void setupContentView() {
-        new Webserver(); //TODO don't open server here should be already running (for testing)
+     //   new Webserver(); //TODO don't open server here should be already running (for testing)
 
         setContentView(R.layout.wimd);
         myLocationView = (TextView) findViewById(R.id.myLocation);

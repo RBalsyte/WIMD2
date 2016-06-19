@@ -457,7 +457,7 @@ int layout abc_screen_toolbar 0x7f040013
 int layout abc_search_dropdown_item_icons_2line 0x7f040014
 int layout abc_search_view 0x7f040015
 int layout abc_simple_dropdown_hint 0x7f040016
-int layout recording_layout 0x7f040017
+int layout scanning_layout 0x7f040017
 int layout support_simple_spinner_dropdown_item 0x7f040018
 int layout wimd 0x7f040019
 int mipmap ic_launcher 0x7f030000
